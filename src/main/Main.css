@@ -1,0 +1,38 @@
+
+
+.cloneflix-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex: 1;
+    margin-left: 20px;
+    max-height: 100vh;
+    overflow-y: scroll;
+    justify-content: space-evenly;
+}
+
+.cloneflix-main-movie {
+    height: 350px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.cloneflix-main-movie-image {
+    max-height:100%; 
+    max-width:100%; 
+}
+
+.cloneflix-main-movie-pill {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px;
+    position:  absolute;
+    bottom: 30px;
+}
