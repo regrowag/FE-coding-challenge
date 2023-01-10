@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Sidebar } from "./sidebar/Sidebar";
 import { getMovieData } from "./utils/fetch";
 import "./App.css";
@@ -21,14 +21,14 @@ type MovieData = {
 };
 function App() {
   const [movieData, setMovieData] = React.useState<MovieData>();
-  const [loaded, hasLoaded] = React.useState<boolean>(false);
+  const hasLoaded = useRef(false);
 
   React.useEffect(() => {
-    if (!loaded) {
-      hasLoaded(true);
+    if (!hasLoaded.current) {
+      hasLoaded.current = true;
       getMovieData().then(setMovieData);
     }
-  }, [loaded]);
+  }, []);
 
   if (!movieData) {
     return null; // loading
