@@ -1,16 +1,21 @@
-# configurable-table
+# Welcome to the Regrow FE coding challenge!
 
-## Prerequisites:
+![reference](reference.jpg)
 
-- node v18
+## Your task
 
-## Task:
+Design and Build a reusable Table component, where a _farmer_ can enter information about their _fields_.
 
-Design the Table component that displays the columns based on the config.
+### Please follow the steps below to complete the coding challenge:
 
-1. How we represent the tables?
-2. How we represent the data?
-3. Build the UI to show the data.
-4. (Bonus) Build the column reordering UI.
+- Refer to the reference.jpg as a guide
+- Each column in the Table will have an input type, e.g. dropdown, date-picker or text input
+- The Table should be usable in various situations, e.g. during planting or harvest season
+- Render the Table component with some mock data
 
-![reference](reference.png)
+---
+
+If you have time:
+
+- Build some input components for the Table
+- Build the column reordering UI
