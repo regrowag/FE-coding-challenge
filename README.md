@@ -1,4 +1,4 @@
-# Welcome to the Regrow FE coding challenge
+# Welcome to the Regrow FE coding challenge!
 
 Please select the challenge:
 
